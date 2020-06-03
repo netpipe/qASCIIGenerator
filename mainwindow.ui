@@ -14,52 +14,31 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QLineEdit" name="asciito">
-    <property name="geometry">
-     <rect>
-      <x>200</x>
-      <y>70</y>
-      <width>221</width>
-      <height>30</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="asciigen">
-    <property name="geometry">
-     <rect>
-      <x>200</x>
-      <y>240</y>
-      <width>88</width>
-      <height>28</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Generate</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_14">
-    <property name="geometry">
-     <rect>
-      <x>80</x>
-      <y>80</y>
-      <width>58</width>
-      <height>18</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>TextLabel</string>
-    </property>
-   </widget>
-   <widget class="QPlainTextEdit" name="asciifrom">
-    <property name="geometry">
-     <rect>
-      <x>440</x>
-      <y>60</y>
-      <width>361</width>
-      <height>211</height>
-     </rect>
-    </property>
-   </widget>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="3" column="1">
+     <widget class="QPushButton" name="asciigen">
+      <property name="text">
+       <string>Generate</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_14">
+      <property name="text">
+       <string>GenText</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QComboBox" name="fonts"/>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLineEdit" name="asciito"/>
+    </item>
+    <item row="0" column="1">
+     <widget class="QPlainTextEdit" name="asciifrom"/>
+    </item>
+   </layout>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
